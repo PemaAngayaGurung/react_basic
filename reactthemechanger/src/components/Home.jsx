@@ -2,16 +2,15 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 
 
+
 const Home = () => {
   const {
     theme,
-    username = "Pema Angaya Gurung",
+    username,
     email,
   } = useContext(ThemeContext);
 
-  const changeTheme = () => {
-    toggleTheme();
-  };
+
 
   return (
     <div className={`h-194  bg-${theme}`}>
